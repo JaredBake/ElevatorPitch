@@ -3,3 +3,8 @@ Tired of your friends never showing up when you all make plans becuase of some l
 
 ## Design
 
+![Mock](CalenderApp.png)
+
+Here is a sequence diagram that shows how to people would interact with the backend to vote.
+
+![Calender event diagram](CalenderServer.png)
