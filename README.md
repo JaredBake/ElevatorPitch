@@ -8,3 +8,25 @@ Tired of your friends never showing up when you all make plans becuase of some l
 Here is a sequence diagram that shows how to people would interact with the backend to vote.
 
 ![Calender event diagram](CalenderServer.png)
+
+## Key features
+- Secure login over HTTPS
+- Ability to create an event on any day
+- Display of current month chosen and events on that month
+- Ability to edit and remove events from calender that you made
+- Updates new events added in real time
+- Events are persistently stored
+- Ability for admin to create or delete group calenders
+
+## Technologies
+- **HTML** - Uses correct HTML structure for application. Two HTML pages. One for login and one for viewing and editing calender.
+- **CSS** - Application styling that looks good on different screen sizes, uses good whitespace, color choice and contrast.
+- **JavaScript** - Provides login, choice display, adding events, display other users events added, backend endpoint calls.
+- **Service** - Backend service with endpoints for:
+  - login
+  - retrieving calender
+  - submitting new events
+  - retrieving new events made by others
+- **DB/Login** - Store users, calenders, and events in database. Register and login users. Credentials securely stored in database. Can't create or edit event unless authenticated.
+- **WebSocket** - As each user creates a new event, their events are broadcast to all other users.
+- **React** - Application ported to use the React web framework.
